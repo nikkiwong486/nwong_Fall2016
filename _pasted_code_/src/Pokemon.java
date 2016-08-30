@@ -11,6 +11,11 @@ public class Pokemon {
 			System.out.println(" (\\_/)");
 			System.out.println("(>o.o<)");
 			System.out.println("(_(\")(\")");
+			System.out.println();
+			System.out.println("          It's a totempole!");
+			System.out.println("               (-o-) ");
+			System.out.println("               (o_o) ");
+			System.out.println("               (>.<) ");
 	}
 
 }
