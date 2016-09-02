@@ -33,12 +33,12 @@ public class Calculate {
 	}
 	public static double toRadians(double number) {
 		double answer;
-		answer=(number*3.14159)/180;
+		answer=(degrees*3.14159)/180;
 		return answer;
 	}
-	public static double discriminant(double a, double b, double c) {
-		double answer;
-		answer=((b*b)-(4*a*c));
+	public static double discriminant(double number) {
+		double=answer;
+		answer=(ax)*(ax)+bx+c;
 		return answer;
 	}
 
