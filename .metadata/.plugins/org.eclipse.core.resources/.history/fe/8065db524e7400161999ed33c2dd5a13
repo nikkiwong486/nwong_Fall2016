@@ -41,10 +41,5 @@ public class Calculate {
 		answer=((b*b)-(4*a*c));
 		return answer;
 	}
-	public static void main(String[] args) toImproperFrac(int number) {
-		int answer;
-		answer=(3, 2, 1);
-		return String;
-	}
 
 }
