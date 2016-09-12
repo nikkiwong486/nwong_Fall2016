@@ -51,16 +51,5 @@ public class Calculate {
 		answer=(number1*number3+"n^2 + "+(number1*number4+number2*number3)+"n + "+(number2*number4));
 		return answer;
 	}
-	public static boolean inDivisibleBy(int number1, int number2) {
-		boolean answer;
-		answer=((number2/number1));
-		return answer;
-	}
-	public static double absValue(double number1, double number2) {
-		x<=0; 
-		double answer;
-		answer=((number1+number2)*(-1));
-		return answer;
-	}
 
 }
