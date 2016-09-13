@@ -51,15 +51,19 @@ public class Calculate {
 		answer=(number1*number3+"n^2 + "+(number1*number4+number2*number3)+"n + "+(number2*number4));
 		return answer;
 	}
-	public static boolean inDivisibleBy(int number1, int number2) {
+	public static boolean isDivisibleBy(int number1, int number2) {
 		boolean answer;
-		answer=(number2/number1);
+		answer=(number1%number2==0);
 		return answer;
 	}
-	public static double absValue(double number1, double number2) {
-		x<=0; 
+	public static double absValue(double number1) { 
 		double answer;
-		answer=((number1+number2)*(-1));
+		if (number1>0){
+			answer = number1;
+		}
+		else {
+			answer = -1 * number1;
+		}
 		return answer;
 	}
 	public static int max(int x, int y) {
@@ -83,12 +87,20 @@ public class Calculate {
 		}
 		return b;
 	}
-	public static double round2(double num1, int num2) {
-		double number;
-		num1*100;
-		num1>0.5;
-		int num2;
-		return num1;
-		
+	public static double round2(double num1) {
+		double answer;
+		answer=num1*100;
+		answer=answer+0.5;
+		answer=(int) answer;
+		answer= answer/100.0;
+		return answer;
 	}
+	public static double exponent(double base, int power) {
+		double answer=1;
+		for(int i=1; i<=power;i++);
+		answer = answer*base;
+		return answer;
+	}
+
+
 }

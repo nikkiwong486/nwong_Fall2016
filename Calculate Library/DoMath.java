@@ -13,7 +13,13 @@ public class DoMath
 		//System.out.println(Calculate.discriminant(5.0,3.0,7.0));
 		//System.out.println(Calculate.toImproperFrac(3,1,2));
 		//System.out.println(Calculate.foil(2,3,6,-7));
-		System.out.println(Calculate.absValue(1.2,-1.9));
+		//System.out.println(Calculate.isDivisibleBy(9, -3));
+		//System.out.println(Calculate.absValue(-1));
+		//System.out.println(Calculate.max(3,5));
+		//System.out.println(Calculate.max(1,7,38));
+		//System.out.println(Calculate.min(2,3));
+		//System.out.println(Calculate.round2(12.672));
+		System.out.println(Calculate.exponent(3,4));
 	}
 	
 }
