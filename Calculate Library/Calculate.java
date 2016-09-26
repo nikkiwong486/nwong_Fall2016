@@ -101,6 +101,22 @@ public class Calculate {
 		answer = answer*base;
 		return answer;
 	}
+	public static int factorial(int num) {
+		int answer;
+		answer= ((num*num) + num + 2);
+		return answer;
+	}
+	public static boolean isPrime(int num) {
+		boolean answer= (num % 2);
+		if (num > 2);
+			return answer;
+	}
+	public static int gcf(int a, int b) {
+		int answer;
+		answer=(a*b);
+		return answer;
+	}
+
 
 
 }
