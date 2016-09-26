@@ -107,18 +107,16 @@ public class Calculate {
 		return answer;
 	}
 	public static boolean isPrime(int num) {
-		boolean answer;
-		answer = (num % 2);
+		boolean answer= (num % 2);
 		if (num > 2);
 			return answer;
 	}
 	public static int gcf(int a, int b) {
 		int answer;
-		answer = (a*b);
+		answer=(a*b);
 		return answer;
 	}
-	public static double sqrt(double num) {
-		double answer;
-		answer = num
-	}
+
+
+
 }
