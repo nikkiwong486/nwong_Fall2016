@@ -106,11 +106,14 @@ public class Calculate {
 		answer= ((num*num) + num + 2);
 		return answer;
 	}
-	public static boolean isPrime(int num) {
-		boolean answer= (num % 2);
-		if (num > 2);
-			return answer;
-	}
+	public static boolean isPrime(int number1) {
+		for (int i = 2; i < number1; i++) {
+			if (number1%i==0) {
+				return false;
+			}
+		}
+		return true;
+	}	
 	public static int gcf(int a, int b) {
 		int answer;
 		answer=(a*b);
