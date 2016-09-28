@@ -119,9 +119,7 @@ public class Calculate {
 		answer=(a*b);
 		return answer;
 	}
-	public static double sqrt(double num) {
-		double answer;
-		answer=num^(1/2);
-		return Math.sqrt;
-	}
+
+
+
 }
