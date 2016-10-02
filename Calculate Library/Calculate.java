@@ -1,6 +1,3 @@
-//
-
-
 public class Calculate {
 //Square
 //input: #
@@ -102,6 +99,7 @@ public class Calculate {
 		return answer;
 	}
 	public static int factorial(int num) {
+<<<<<<< HEAD
 		int answer;
 		answer= ((num*num) + num + 2);
 		return answer;
@@ -112,13 +110,33 @@ public class Calculate {
 		if (num > 2);
 			return answer;
 	}
+=======
+		 int product = 1;
+		 for (int i = num; i > 1; i--) {
+			 product = product*i;
+		 }
+		 return product;
+	}
+	public static boolean isPrime(int number1) {
+		for (int i = 2; i < number1; i++) {
+			if (number1%i==0) {
+				return false;
+			}
+		}
+		return true;
+	}	
+>>>>>>> origin/master
 	public static int gcf(int a, int b) {
 		int answer;
 		answer = (a*b);
 		return answer;
 	}
 	public static double sqrt(double num) {
+<<<<<<< HEAD
 		double answer;
 		answer = num
+=======
+		return Math.sqrt(num);
+>>>>>>> origin/master
 	}
 }
