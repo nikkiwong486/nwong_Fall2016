@@ -1,5 +1,5 @@
 
-
+@author NikkiWong
 public class SplitStringLab
 {
 	

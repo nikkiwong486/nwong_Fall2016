@@ -1,4 +1,4 @@
-public class Hourglass {
+ public class Hourglass {
 
 	public static void main(String[] args) {
 		//print line 1
