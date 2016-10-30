@@ -22,7 +22,7 @@ public class SplitStringLab
 		System.out.println(Arrays.toString("I really like really red apples!".split("really")));
 		System.out.println(Arrays.toString("breadcheesebread!".split("bread")));
 		System.out.println(Arrays.toString("I like really cheesy bread!".split(" ")));
-		System.out.println("");
+		System.out.println(Arrays.toString("".split(" ")));
 		System.out.println(sandwich("breadcheesemustardbreadlettucebread"));
 	}
 		//Your task:
@@ -32,10 +32,15 @@ public class SplitStringLab
 		*/
 		public static String sandwich(String ingredients){
 			//Check for two slices of bread
+			int breadCount = 0;
+			for (int i = 0; i<ingredients.length(); i++)
+				if(ingredients.substring(i, i+5).equals("bread")){
+					breadCount += 1;
+				}
+				if (breadCount<2){
+				}
 			
 			//Get rid of everything that is on top
-			
-			
 			
 			
 			
@@ -51,7 +56,7 @@ public class SplitStringLab
 		}
 		
 		//Your task pt 2:
-		/*Write a method that take in a string like "apples pineapples bread lettus tomato bacon mayo ham bread cheese" describing a sandwich
+		/*Write a method that take in a string like "apples pineapples bread lettuce tomato bacon mayo ham bread cheese" describing a sandwich
 		 * use String.split to split up the sandwich at the spaces, " ", and return what's in the middle of the sandwich and ignores what's on the outside
 		 * Again, what if it's a fancy sandwich with multiple pieces of bread?
 		*/
