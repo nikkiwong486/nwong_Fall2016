@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class LotsofCopies
 {
@@ -7,7 +6,6 @@ public class LotsofCopies
 			int num = 7;
 			String strMain = "APCS";
 			int [] arrMain = {1, 2, 3, 4, 5};
-			System.out.print(Arrays.toString(arrMain));
 		}
 	public static void changeMe (int x, String str, int [] arr)
 	{
