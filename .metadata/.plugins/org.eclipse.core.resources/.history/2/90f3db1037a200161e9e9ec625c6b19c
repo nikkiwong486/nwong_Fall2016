@@ -1,0 +1,44 @@
+import java.util.Arrays;
+
+public class LotsofCopies
+{
+	public static void main (String[] args)
+	{	
+			int num = 7;
+			String strMain = "APCS";
+			int [] arrMain = {1, 2, 3, 4, 5};
+			//System.out.print(Arrays.toString(arrMain));
+			changeMe (num, strMain, arrMain);
+			System.out.println(num);
+			System.out.println(strMain);
+			System.out.println(Arrays.toString(arrMain));
+			int a = 9;
+			int b = 17;
+			testValue(a, b);
+		}
+	public static void changeMe (int x, String str, int [] arr)
+	{ 
+		System.out.println(x);
+		System.out.println(str);
+		System.out.println(Arrays.toString(arr));
+		System.out.println("Initial");
+		x = 48;
+		str = "apples";
+		for (int i = 0; i <= 3; i++){
+		arr[i] = i;
+		} 
+		System.out.println("After");
+		System.out.println(x);
+		System.out.println(str);
+		System.out.println(Arrays.toString(arr));
+	}
+	
+	public static void testValue(int a, int b){
+		System.out.println(a);
+		System.out.println(b);
+		b = a;
+		a = 23;
+		System.out.println(a);
+		System.out.println(b);
+	}
+}

@@ -29,7 +29,7 @@ public class SplitStringLab
 		System.out.println(sandwich("breadcheesemustardbreadlettuce"));
 		System.out.println(sandwich("mmbreadcheesemustardbread"));
 		System.out.println(sandwich("breadcheesemustardbreadlettucebread"));
-		
+		System.out.println(sandwich("applespineapplesbreadlettustomatobaconmayohambreadcheese"));
 	}
 		//Your task:
 		/*Write a method that take in a string like "applespineapplesbreadlettustomatobaconmayohambreadcheese" describing a sandwich
