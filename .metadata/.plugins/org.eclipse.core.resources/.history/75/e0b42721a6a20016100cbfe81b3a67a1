@@ -65,6 +65,6 @@ public class LotsofCopies
 	}
 }
 // When you pass something into a method and then change the value inside the method, does the value change in the main part of your program?
-	//The integer and String would change and the array won't since you can change int and String variables, but you can't change the variables of an array.
+	//
 // What will b equal? When you set one variable to equal anpother and then change the original variable to something else, does the second value change too or stay the same?
 	//For both integers and String, the variables stay the same when you make b = a. But arrays stay the same whether you re-initialize it or not because arrays can't change their input once it's initialized.
