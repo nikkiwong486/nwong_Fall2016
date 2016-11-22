@@ -11,8 +11,9 @@ public class FracCalc {
     	Scanner scanner = new Scanner(System.in);
     	String input = scanner.nextLine();
     	while (input != "quit"){
+    		
     		String answer = produceAnswer(input);
-    		System.out.print(answer);
+    		System.out.println(answer);
     		input = scanner.nextLine();
     	}
     	System.exit(0);
@@ -34,17 +35,23 @@ public class FracCalc {
         // TODO: Implement this function to produce the solution to the input
         String[] operation = input.split("\\s+");
         int result = 0;
-        if(operation[1].trim() == "+"){
-        	Integer i1 = new Integer(operation[0]);
-        	Integer i2 = new Integer(operation[2]);
-        	result = i1 + i2;
-        	
-        	
-        }if(operation[1] == "-"){
-        }if(operation[1] == "*"){
-        }if(operation[1] == "/"){
-        }
-        System.out.println("ANs"+result);
+        
+    		System.out.println(operation[2]);
+    		
+    		String s1 = operation[0];
+    		String s2 = operation[2];
+    		if (s2.indexOf("_")>0){
+    			String[] parseNumber = s2.split("_");
+    			String whole = parseNumber[0];
+    			String[] numDen = parseNumber[1].split("/");
+    			String numerator = numDen[1];
+    			String denominator = numDen[2];
+    			System.out.print("whole:" + parseNumber[1]);
+    			System.out.print("numerator:" + numDen[1]);
+    			System.out.print("denominator:" + numDen[2]);
+    		}
+        
+        System.out.println("Answer"+result);
         return "" + result;
     }
 
