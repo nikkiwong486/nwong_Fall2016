@@ -1,4 +1,4 @@
-package fracCalc;
+package fracCalc; 
 import java.util.Scanner;
 public class FracCalc {
 
@@ -11,9 +11,9 @@ public class FracCalc {
     	Scanner scanner = new Scanner(System.in);
     	String input = scanner.nextLine();
     	while (input != "quit"){
-    		
-    		String answer = produceAnswer(input);
-    		System.out.println(answer);
+    			
+    		produceAnswer(input);
+    		//System.out.println(answer);
     		input = scanner.nextLine();
     	}
     	System.exit(0);
@@ -30,29 +30,48 @@ public class FracCalc {
     //        
     // The function should return the result of the fraction after it has been calculated
     //      e.g. return ==> "1_1/4"
-    public static String produceAnswer(String input)
+    public static void produceAnswer(String input)
     { 
         // TODO: Implement this function to produce the solution to the input
         String[] operation = input.split("\\s+");
         int result = 0;
         
-    		System.out.println(operation[2]);
-    		
+    		//System.out.println(operation[2]);
+
     		String s1 = operation[0];
     		String s2 = operation[2];
-    		if (s2.indexOf("_")>0){
-    			String[] parseNumber = s2.split("_");
+    		
+    		parseNum(s2);
+    		
+    }		
+    public static String parseNum(String num){		
+    		if (num.indexOf("_")>0){
+    			String[] parseNumber = num.split("_");
     			String whole = parseNumber[0];
-    			String[] numDen = parseNumber[1].split("/");
-    			String numerator = numDen[1];
-    			String denominator = numDen[2];
-    			System.out.print("whole:" + parseNumber[1]);
-    			System.out.print("numerator:" + numDen[1]);
-    			System.out.print("denominator:" + numDen[2]);
+    			String fraction = parseNumber[1];
+    			
+    			String[] numDen = fraction.split("/");
+    			String numerator = numDen[0];
+    			String denominator = numDen[1];
+    			
+    			System.out.print("whole:" + whole);
+    			System.out.print(" numerator:" + numerator);
+    			System.out.print(" denominator:" + denominator);
+    			
+    		}else if(num.indexOf("/") > 0){
+    			String[] numeratorSplit = num.split("/");
+    				String numerator = numeratorSplit[0];
+    				String denominator = numeratorSplit[1];
+    				
+    				System.out.print("whole:0");
+    				System.out.print(" numerator:" + numerator);
+    				System.out.print(" denominator:" + denominator);		
+    		}else{
+    			System.out.println("whole:" + num +  " numerator:0 denominator:0");
     		}
         
-        System.out.println("Answer"+result);
-        return "" + result;
+       // System.out.println("Answer"+result);
+       return "";
     }
 
     // TODO: Fill in the space below with any helper methods that you think you will need
