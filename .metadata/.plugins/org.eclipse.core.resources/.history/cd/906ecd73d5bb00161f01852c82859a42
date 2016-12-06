@@ -63,7 +63,7 @@ public class FracCalc {
     				String numerator = numeratorSplit[0];
     				String denominator = numeratorSplit[1];
     				
-    				System.out.print("whole: 0");
+    				System.out.print("whole:0");
     				System.out.print(" numerator:" + numerator);
     				System.out.print(" denominator:" + denominator);		
     		}else{
@@ -75,6 +75,5 @@ public class FracCalc {
     }
 
     // TODO: Fill in the space below with any helper methods that you think you will need
-    public static String addNum
+    
 }
-
