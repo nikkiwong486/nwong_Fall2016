@@ -1,4 +1,4 @@
-package fracCalc; 
+package fracCalc;
 import java.util.Scanner;
 public class FracCalc {
 
@@ -75,6 +75,20 @@ public class FracCalc {
     }
 
     // TODO: Fill in the space below with any helper methods that you think you will need
-    public static String addNum
-}
+    public static String addFrac(String num){
+    //if s1 and s2 do not have a common denominator, multiply the two fractions together to get the GCF.
+    	// add the numerator, keep the denominator
+    	return num;
+    	System.out.println("a")
+    }
+    public static String subtractFrac(String num){
+    return num;
+    }
+    public static String multiplyFrac(String num){
+    return num;	
+    }
+    public static String divideFrac(String num){
+    return num;	
+    }
 
+}
