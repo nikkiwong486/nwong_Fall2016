@@ -38,7 +38,14 @@ public class FracCalc {
 		int[] operand2 = new int[3];
 		operand1 = parseOperand(parsedExpression[0]);
 		operand2 = parseOperand(parsedExpression[2]);
-		
+		//call addFrac, subtractFrac, multiplyFrac, and divideFrac
+		addFrac(operand1, operand2);
+		subtractFrac(operand1, operand2);
+		multiplyFrac(num);
+		divideFrac(num);
+		//call toMixedNum
+		toMixedNum();
+		//return answer
  
 
 		// System.out.println(operation[2]);
@@ -46,7 +53,7 @@ public class FracCalc {
 		String s1 = parsedExpression[0];
 		String s2 = parsedExpression[2];
 
-		parseNum(s2);
+		
 
 	}
 
@@ -73,7 +80,7 @@ public class FracCalc {
 		}
 
 		// System.out.println("Answer"+result);
-		return "";
+		return ("Answer" + result);
 	}
 
 	// try to make something so that it will make sure the denominators are the
@@ -101,7 +108,7 @@ public class FracCalc {
 		
 	}
 
-	/*public static int[] multiplyFrac(String num) {
+	public static int[] multiplyFrac(String num) {
 		// multiply both the fractions together
 		return num;
 	}
@@ -111,5 +118,5 @@ public class FracCalc {
 		// multiply the two fractions together
 		return num;
 	}
-*/
+
 }
