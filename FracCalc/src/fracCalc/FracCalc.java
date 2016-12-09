@@ -59,10 +59,6 @@ public class FracCalc {
 			sResult = result[0] + "_" + result[1] + "/" + result[2];
 	    if (result[1]==0){ 
 		 sResult = result[0] + "";}
-		//call toMixedNum
-		//toMixedNum();
-		//return answer
- 
 
 		// System.out.println(operation[2]);
 
